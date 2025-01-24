@@ -5,35 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shashank Kumar - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesv1.css">
+    <link rel="stylesheet" href="stylesCopy.css">
 </head>
 <body>
 
 <header>
-    <img src="shashank-photo.jpg" alt="Shashank Kumar" class="profile-photo">
+   <img src="shashank-photo.jpg" alt="Shashank Kumar" class="profile-photo">
+
     <div>
-        <h1 class="name">Shashank Kumar</h1>
+        <h1>Shashank Kumar</h1>
         <p>B.Tech in Electronics and Communication Engineering</p>
     </div>
 </header>
 
-<!-- Mobile Hamburger Menu Container -->
-<div class="hamburger-container" onclick="toggleMenu()">
-    <div class="hamburger">&#9776;</div>
-</div>
-
-<!-- Mobile Navigation -->
-<div class="mobile-nav">
-    <a href="#career-objective" onclick="closeMenu()">Career Objective</a>
-    <a href="#experience" onclick="closeMenu()">Experience</a>
-    <a href="#education" onclick="closeMenu()">Education</a>
-    <a href="#skills" onclick="closeMenu()">Skills</a>
-    <a href="#certifications" onclick="closeMenu()">Certifications</a>
-    <a href="#awards" onclick="closeMenu()">Awards</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
-</div>
-
-<!-- Regular Desktop Navigation -->
 <nav>
     <a href="#career-objective">Career Objective</a>
     <a href="#experience">Experience</a>
@@ -121,31 +105,6 @@
 <footer>
     <p>&copy; 2025 Shashank Kumar. All Rights Reserved.</p>
 </footer>
-
-<script>
-    // Toggle Mobile Navigation
-    function toggleMenu() {
-        const menu = document.querySelector('.mobile-nav');
-        menu.classList.toggle('active'); // Add/remove 'active' to show/hide
-    }
-
-    // Close Menu after selecting an item
-    function closeMenu() {
-        const menu = document.querySelector('.mobile-nav');
-        menu.classList.remove('active');
-    }
-
-    // Close Menu when clicking anywhere on the page
-    document.addEventListener('click', function(event) {
-        const menu = document.querySelector('.mobile-nav');
-        const hamburger = document.querySelector('.hamburger-container');
-        
-        // Close the menu if clicked outside the menu and hamburger
-        if (!hamburger.contains(event.target) && !menu.contains(event.target)) {
-            menu.classList.remove('active');
-        }
-    });
-</script>
 
 </body>
 </html>
